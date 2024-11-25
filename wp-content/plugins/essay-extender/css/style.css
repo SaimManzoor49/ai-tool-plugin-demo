@@ -1,0 +1,293 @@
+/* style.css */
+.essay-extender-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.essay-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.main-heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.toc-container {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+}
+
+.essay-input-section {
+    margin: 2rem 0;
+}
+
+#essay-input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+#extend-essay {
+    max-height: 60px;
+    background: #0073aa;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#extend-essay:hover {
+    background: #005177;
+}
+
+.sidebar-widget {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 2rem;
+}
+
+.faq-section {
+    margin-top: 3rem;
+}
+
+.faq-item {
+    margin-bottom: 1.5rem;
+}
+
+.faq-item h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .essay-extender-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .sidebar-widget {
+        position: static;
+    }
+}
+
+
+/* Add to your existing CSS */
+.loading {
+    padding: 20px;
+    text-align: center;
+    color: #666;
+    background: #f8f9fa;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.error-message {
+    padding: 15px;
+    background: #ffebee;
+    border: 1px solid #ffcdd2;
+    color: #c62828;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.success-message {
+    padding: 15px;
+    background: #e8f5e9;
+    border: 1px solid #c8e6c9;
+    color: #2e7d32;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.extended-text {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+pre {
+    background: #f5f5f5;
+    padding: 10px;
+    overflow-x: auto;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+
+
+.essay-extender-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.essay-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.essay-content h1 {
+    color: #2c3338;
+    margin-bottom: 30px;
+}
+
+.essay-input-section {
+    margin: 30px 0;
+}
+
+#essay-input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#text-counter {
+    color: #646970;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+#extend-essay {
+    background: #2271b1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#extend-essay:hover {
+    background: #135e96;
+}
+
+#extended-output {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    background: #f6f7f7;
+    display: none;
+}
+
+.faq-section {
+    margin-top: 40px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    color: #2c3338;
+    margin-bottom: 10px;
+}
+
+.loading {
+    position: relative;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin: -12px 0 0 -12px;
+    border: 2px solid #2271b1;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.error-message {
+    color: #d63638;
+    padding: 10px;
+    background: #fcf0f1;
+    border-left: 4px solid #d63638;
+    margin: 10px 0;
+}
+
+
+
+.essay-extender-container {
+    display: grid;
+    grid-template-columns: 250px 1fr 250px;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.essay-extender-title {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.essay-extender-toc {
+    grid-column: 1;
+}
+
+.essay-extender-main {
+    grid-column: 2;
+}
+
+.essay-extender-sidebar {
+    grid-column: 3;
+}
+
+.essay-input-area {
+    margin: 2rem 0;
+}
+
+#essay-input {
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.max-h{
+    max-height: 60px;
+}
