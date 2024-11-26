@@ -1,37 +1,31 @@
-// js/app.js
-
 // Tool modules configuration
 const tools = {
     'essay-extender': {
         label: 'Essay Extender',
         module: './tools/essay-extender.js'
     },
-    'essay-summarizer': {
-        label: 'Essay Summarizer', 
-        module: './tools/essay-summarizer.js'
-    },
-    'abstract-generator': {
-        label: 'Abstract Generator',
-        module: './tools/abstract-generator.js'
-    }
 };
 
-// Render sidebar with tool buttons
 function renderSidebar() {
     const sidebarContainer = document.getElementById('ai-tools-sidebar');
     
     sidebarContainer.innerHTML = `
-        <div class="list-group list-group-flush">
-            <h4 class="list-group-item bg-primary text-white">AI Tools</h4>
-            ${Object.entries(tools).map(([toolId, tool]) => `
-                <button 
-                    id="${toolId}-btn" 
-                    class="list-group-item list-group-item-action" 
-                    data-tool="${toolId}"
-                >
-                    ${tool.label}
-                </button>
-            `).join('')}
+       <div class="sidebar">
+        <h4 class="sidebar-title">
+            <i class="fas fa-robot"></i>
+            AI Tools
+        </h4>
+        <nav class="sidebar-nav">
+        ${Object.entries(tools).map(([toolId, tool]) => `
+            <button 
+                id="${toolId}-btn" 
+                class="sidebar-link" 
+                data-tool="${toolId}" 
+            >
+                ${tool.label}
+            </button>
+        `).join('')}
+        </nav>
         </div>
     `;
 
@@ -40,6 +34,16 @@ function renderSidebar() {
         const button = document.getElementById(`${toolId}-btn`);
         button.addEventListener('click', () => loadTool(toolId));
     });
+}
+
+// Helper function to get icons for tools
+function getToolIcon(toolId) {
+    const icons = {
+        'essay-extender': 'fa-file-alt',
+        // Add more tool icons as needed
+        'default': 'fa-tools'
+    };
+    return icons[toolId] || icons['default'];
 }
 
 // Load and render a specific tool
