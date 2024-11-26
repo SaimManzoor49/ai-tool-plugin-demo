@@ -57,7 +57,7 @@ export function renderTool(toolContent, baseUrl) {
                                 <option value="proffectional">Proffectional</option>
                                 <option value="academic">Academic</option>
                                 <option value="creative">Creative</option>
-                                <option value="Blg/SEO">Blg/SEO</option>
+                                <option value="Blog/SEO">Blog/SEO</option>
                                 <option value="Casual">Casual</option>
                                 <option value="Technical">Technical</option>
                             </select>
@@ -65,7 +65,7 @@ export function renderTool(toolContent, baseUrl) {
                         <div class="processing-actions">
                             <button 
                                 id="humanize-text-btn" 
-                                class="btn btn-primary"
+                                class="btn btn-primary primary-btn"
                             >
                                 <i class="fas fa-expand-arrows-alt"></i> Humanize text
                             </button>

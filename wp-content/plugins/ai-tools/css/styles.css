@@ -14,6 +14,16 @@
     --transition-speed: 0.3s;
 }
 
+.primary-btn{
+    background-color: var(--primary-color);
+    border: none;
+}
+.primary-btn:hover{
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color) ;
+}
+
 /* Sidebar Styles */
 .sidebar-wrapper {
     height: 100%;
@@ -77,11 +87,11 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 1rem 1.25rem;
+    padding: 0.50rem 1.25rem;
     font-size: 1rem;
     font-weight: 500;
     text-align: left;
-    border-radius: 10px;
+    border-radius: 0px;
     background: rgba(255, 255, 255, 0.05);
     transition: all 0.3s ease;
     position: relative;
@@ -232,7 +242,7 @@
         -webkit-tap-highlight-color: transparent;
     }
 }
-.essay-extender-container {
+.text-humanizer-container {
     display: block !important;
     background-color: #f8f9fa;
     border-radius: 15px;
@@ -247,13 +257,13 @@
     margin-bottom: 20px;
 }
 
-.essay-textarea {
+.text-textarea {
     resize: vertical;
     border-radius: 10px;
     transition: all 0.3s ease;
 }
 
-.essay-textarea:focus {
+.text-textarea:focus {
     box-shadow: 0 0 10px rgba(233, 69, 96, 0.2);
     border-color: var(--primary-color);
 }
@@ -272,7 +282,7 @@
 }
 
 @media (max-width: 768px) {
-    .essay-extender-container {
+    .text-extender-container {
         padding: 15px;
     }
 

@@ -1,8 +1,8 @@
 // Tool modules configuration
 const tools = {
-    'essay-extender': {
-        label: 'Essay Extender',
-        module: './tools/essay-extender.js'
+    'text-humanizer': {
+        label: 'Text Humanizer',
+        module: './tools/text-humanizer.js'
     },
 };
 
@@ -39,7 +39,7 @@ function renderSidebar() {
 // Helper function to get icons for tools
 function getToolIcon(toolId) {
     const icons = {
-        'essay-extender': 'fa-file-alt',
+        'text-humanizer': 'fa-file-alt',
         // Add more tool icons as needed
         'default': 'fa-tools'
     };
